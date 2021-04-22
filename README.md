@@ -1,5 +1,5 @@
-# Core-Patch-Notifier
+# Core-Perks
 
-Documentation for the Patch Notifier on Community Content.
+Documentation for Core Perks Examples on Community Content.
 
-https://popthosepringles.github.io/Core-Patch-Notifier
+https://popthosepringles.github.io/Core-Perks
