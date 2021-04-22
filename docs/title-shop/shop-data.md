@@ -16,10 +16,7 @@ In here you will see the current title that have been setup for the example.
 
 Create your perk for the shop item.
 
-<video controls>
-	<source src="/videos/title-shop/create_perk.mp4" type="video/mp4">
-	Your browser does not support the video tag.
-</video>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Er6gkLnTl5s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Create Item
 
@@ -34,14 +31,8 @@ Add a new copy of the `Perk_Title_Shop_Item_Data` script to the `Data Items` fol
 | `id` | A unique ID for this title. |
 | `title` | The title. |
 
-<video controls>
-	<source src="/videos/title-shop/data.mp4" type="video/mp4">
-	Your browser does not support the video tag.
-</video>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/BERKKHTaYBM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Now enter player mode and test out to see if your new shop item shows up.
 
-<video controls>
-	<source src="/videos/title-shop/example2.mp4" type="video/mp4">
-	Your browser does not support the video tag.
-</video>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/YE0ixCt4Q38" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

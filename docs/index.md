@@ -25,7 +25,7 @@ Here is a list of all the type of perk examples that come with this kit.
 
  - `Title Shop (Permanent)`
 
-	*An example of how you could implement a more cosmetic style of shop.  In this case it is titles for the players that will show under their name.*
+	*An example of how you could implement a more cosmetic style of shop.  In this case it is titles for the players that will show above their head.*
 
  - `VIP Shop (Limited Time)`
 

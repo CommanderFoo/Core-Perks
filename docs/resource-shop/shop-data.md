@@ -16,10 +16,7 @@ In here you will see the current resources that have been setup for the example.
 
 Create your perk for the shop item.
 
-<video controls>
-	<source src="/videos/resource-shop/create_perk.mp4" type="video/mp4">
-	Your browser does not support the video tag.
-</video>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/2_csJ6xsE2M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Create Item
 
@@ -35,14 +32,8 @@ Add a new copy of the `Perk_Resource_Shop_Item_Data` script to the `Data Items` 
 | `resource_perk` | The perk for this item. |
 | `resource_image` | The image that will be displayed in the shop for this item. |
 
-<video controls>
-	<source src="/videos/resource-shop/data.mp4" type="video/mp4">
-	Your browser does not support the video tag.
-</video>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/VnO-WU95SJ0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Now enter player mode and test out to see if your new shop item shows up.
 
-<video controls>
-	<source src="/videos/resource-shop/example2.mp4" type="video/mp4">
-	Your browser does not support the video tag.
-</video>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/cikTCM0VPzc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

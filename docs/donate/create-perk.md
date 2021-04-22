@@ -2,7 +2,4 @@
 
 Create your donation perk and drop it onto the `donate_perk` property.
 
-<video controls>
-	<source src="/videos/donate/create_perk.mp4" type="video/mp4">
-	Your browser does not support the video tag.
-</video>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/1Br1pKa6Qng" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

@@ -6,10 +6,7 @@ Creating and testing perks is very straight forward.  Manticore has built Creato
 
 The `Perk Manager` window is where you will be managing your perks.  You can open this window from the `Window` menu.
 
-<video controls>
-	<source src="/videos/misc/perk_manager.mp4" type="video/mp4">
-	Your browser does not support the video tag.
-</video>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Rq-WR2WJCSs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 !!! tip
     For a perk to be enabled, the project must be published.  You do not need to republish your project to enable the perk.  Just set the perk to `Active`.
@@ -17,12 +14,9 @@ The `Perk Manager` window is where you will be managing your perks.  You can ope
 !!! tip
 	It's a good idea to enable the option `View Only Perks in Current Project`.  This is handy so that you don't accidentally modify a perk from a different project.
 
-Here is an example of creating a donating type perk that can be repeated by the player.
+Here is an example of creating a donation type perk that can be repeated by the player.
 
-<video controls>
-	<source src="/videos/misc/create_example.mp4" type="video/mp4">
-	Your browser does not support the video tag.
-</video>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/5sO1GX_mopU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 !!! tip
 	Give your perk name something that is readable, as this will be displayed to the player in game.
@@ -33,14 +27,11 @@ Testing perks locally is extremely important, and this is made very easy for us 
 
 The `Perk Testing` window allows you to control which local players has perks.  So for example, if you want to test a permanent perk for a player, you can enable it in the window, and when entering play mode, that player will have that perk given to them.  An extremely useful tool.
 
-<video controls>
-	<source src="/videos/misc/perk_testing.mp4" type="video/mp4">
-	Your browser does not support the video tag.
-</video>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/DLFkht0wpk0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Perk Properties
 
-To be able to use a component that requires a perk, you will need to drag and drop your perk onto the property of that component.  If you don't do this then the Core Editor will give you a warning.
+To be able to use a component that requires a perk, you will need to drag and drop your perk onto the property of that component.  If you don't do this then the Event Log will give you a warning.
 
 !!! warning
 	cannot set perk with given NetReference, incorrect NetReference type
@@ -49,7 +40,4 @@ If you see this warning, or a custom warning setup by the content creator, then 
 
 Simply drag the perk from the `Perk Manager` onto the property in the hierarchy.
 
-<video controls>
-	<source src="/videos/misc/perk_property.mp4" type="video/mp4">
-	Your browser does not support the video tag.
-</video>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/kVvSSWawtyg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

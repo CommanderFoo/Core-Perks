@@ -6,10 +6,7 @@ In the example you will see the player purchase the Gold tier which will give th
 
 When thethe perk is purchased, you will see the coins being picked up will give double.
 
-<video controls>
-	<source src="/videos/vip-shop/example.mp4" type="video/mp4">
-	Your browser does not support the video tag.
-</video>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/0IdBpt1uiCg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 !!! Tip
 	Checkout `Efficient Collectables` by `TeamMeta` for a better way to handle pickups.
