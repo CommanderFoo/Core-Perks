@@ -310,9 +310,8 @@ Assets {
         Name: "Dollar Sign Pivot"
         Transform {
           Location {
-            X: 67.7999878
             Y: -10.840332
-            Z: 88.8602219
+            Z: 88.8602142
           }
           Rotation {
           }
@@ -451,9 +450,8 @@ Assets {
         Name: "Donate Trigger"
         Transform {
           Location {
-            X: 65.0316315
-            Y: 5.12631226
-            Z: 165.282898
+            Y: 5.12630701
+            Z: 165.282883
           }
           Rotation {
           }
@@ -490,8 +488,7 @@ Assets {
         Name: "Chain Ceiling Anchor"
         Transform {
           Location {
-            X: 65.9800415
-            Y: -6.3001709
+            Y: -6.30015373
             Z: -16.6220398
           }
           Rotation {
@@ -541,8 +538,7 @@ Assets {
         Name: "Chain Ceiling Anchor"
         Transform {
           Location {
-            X: 65.9800415
-            Y: -6.3001709
+            Y: -6.30015373
             Z: -7.46072388
           }
           Rotation {
@@ -1151,4 +1147,5 @@ Assets {
     }
   }
   SerializationVersion: 81
+  DirectlyPublished: true
 }

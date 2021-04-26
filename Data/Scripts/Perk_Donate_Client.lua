@@ -104,8 +104,12 @@ function Tick(dt)
 	end
 end
 
+-- Handles showing the donate UI panel to the player.
+
 function show_donate_panel()
 	trigger.isInteractable = false
+
+	-- Store cursor state so we can reset it back later
 
 	cursor_visible = UI.IsCursorVisible()
 	intereact_ui = UI.CanCursorInteractWithUI()
@@ -116,6 +120,8 @@ function show_donate_panel()
 	donate_panel.visibility = Visibility.FORCE_ON
 end
 
+-- Handles hiding the dontate UI for the player.
+
 function hide_donate_panel()
 	donate_panel.visibility = Visibility.FORCE_OFF
 
@@ -125,6 +131,8 @@ function hide_donate_panel()
 	thanks.visibility = Visibility.FORCE_OFF
 	perk_button.visibility = Visibility.FORCE_ON
 
+	-- Reset cursor back to what it was original.
+	
 	UI.SetCursorVisible(cursor_visible)
 	UI.SetCanCursorInteractWithUI(intereact_ui)
 

@@ -2,11 +2,18 @@
 
 local YOOTIL = require(script:GetCustomProperty("YOOTIL"))
 
+-- The root of this component
+
 local root = script.parent.parent.parent
+
+-- Custom properties that can be changed
 
 local disable_player = root:GetCustomProperty("disable_player")
 local items_per_row = root:GetCustomProperty("items_per_row")
 local shop_height = root:GetCustomProperty("shop_height")
+
+-- Custom properties on the script that shouldn't really be changed unless you 
+-- know what you are doing.
 
 local shop_items = script:GetCustomProperty("shop_items"):WaitForObject()
 local trigger = script:GetCustomProperty("trigger"):WaitForObject()
@@ -18,7 +25,6 @@ local shop_ui = script:GetCustomProperty("shop_ui"):WaitForObject()
 local ui_resources = script:GetCustomProperty("ui_resources"):WaitForObject()
 
 local local_player = Game.GetLocalPlayer()
-
 local evts = {}
 
 -- Store cursor state later so we can revert it back when closing the panel.
@@ -41,6 +47,7 @@ local item_height = 0
 local rows = 1
 
 -- Loop through all the data items and setup the UI
+-- This handles placement so that you don't have to manually do this.
 
 for i, d in ipairs(data_items:GetChildren()) do
 	local item = World.SpawnAsset(shop_item, { parent = shop_items })
@@ -129,6 +136,12 @@ evts[#evts + 1] = local_player.resourceChangedEvent:Connect(function(player, res
 		end
 	end
 end)
+
+-- Wait 1 frame so that we can then tell the server we are ready.
+
+Task.Wait()
+
+YOOTIL.Events.broadcast_to_server("perk_resource_ready")
 
 -- cleanup
 

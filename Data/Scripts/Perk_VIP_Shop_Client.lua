@@ -9,6 +9,10 @@ local bronze_perk = root:GetCustomProperty("bronze_perk")
 local silver_perk = root:GetCustomProperty("silver_perk")
 local gold_perk = root:GetCustomProperty("gold_perk")
 
+local purchased_bronze = script:GetCustomProperty("purchased_bronze"):WaitForObject()
+local purchased_silver = script:GetCustomProperty("purchased_silver"):WaitForObject()
+local purchased_gold = script:GetCustomProperty("purchased_gold"):WaitForObject()
+
 local trigger = script:GetCustomProperty("trigger"):WaitForObject()
 local click_sound = script:GetCustomProperty("click_sound"):WaitForObject()
 local close_button = script:GetCustomProperty("close_button"):WaitForObject()
@@ -51,6 +55,21 @@ end
 -- Open shop specific code
 
 function open_shop()
+	if(local_player:HasPerk(bronze_perk)) then
+		bronze_button.visibility = Visibility.FORCE_OFF
+		purchased_bronze.visibility = Visibility.FORCE_ON
+	end
+
+	if(local_player:HasPerk(silver_perk)) then
+		silver_button.visibility = Visibility.FORCE_OFF
+		purchased_silver.visibility = Visibility.FORCE_ON
+	end
+
+	if(local_player:HasPerk(gold_perk)) then
+		gold_button.visibility = Visibility.FORCE_OFF
+		purchased_gold.visibility = Visibility.FORCE_ON
+	end
+
 	trigger.isInteractable = false
 
 	cursor_visible = UI.IsCursorVisible()
@@ -76,6 +95,21 @@ function close_shop()
 	shop_ui.visibility = Visibility.FORCE_OFF
 end
 
+-- Check when a perk is purchased and hide the button and display the purchased text
+
+evts[#evts + 1] = local_player.resourceChangedEvent:Connect(function(player, prop)
+	if(prop == "gold_vip") then
+		gold_button.visibility = Visibility.FORCE_OFF
+		purchased_gold.visibility = Visibility.FORCE_ON
+	elseif(prop == "silver_vip") then
+		silver_button.visibility = Visibility.FORCE_OFF
+		purchased_silver.visibility = Visibility.FORCE_ON
+	elseif(prop == "bronze_vip") then
+		bronze_button.visibility = Visibility.FORCE_OFF
+		purchased_bronze.visibility = Visibility.FORCE_ON
+	end
+end)
+
 -- Close button for the panel.
 
 evts[#evts + 1] = close_button.clickedEvent:Connect(function()
@@ -88,6 +122,12 @@ evts[#evts + 1] = close_button.clickedEvent:Connect(function()
 end)
 
 evts[#evts + 1] = trigger.interactedEvent:Connect(open_shop)
+
+-- Wait 1 frame so that we can then tell the server we are ready.
+
+Task.Wait()
+
+YOOTIL.Events.broadcast_to_server("perk_vip_ready")
 
 -- cleanup
 

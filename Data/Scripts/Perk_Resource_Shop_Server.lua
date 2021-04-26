@@ -29,16 +29,6 @@ evts[#evts + 1] = Game.playerJoinedEvent:Connect(function(player)
 			player:AddResource(perk_data[perk].resource_key, perk_data[perk].resource_amount)
 		end
 	end)
-
-	if(store_persistently) then
-		local data = Storage.GetPlayerData(player) or {}
-
-		for k, p in pairs(perk_data) do
-			if(data[p.resource_key]) then
-				player:SetResource(p.resource_key, data[p.resource_key])
-			end
-		end
-	end
 end)
 
 -- On player left, we do some cleanup and save the player data
@@ -56,6 +46,20 @@ evts[#evts + 1] = Game.playerLeftEvent:Connect(function(player)
 			end
 
 			Storage.SetPlayerData(player, data)
+		end
+	end
+end)
+
+-- Setup resources for the player once they are ready for them.
+
+evts[#evts + 1] = Events.ConnectForPlayer("perk_resource_ready", function(player)
+	if(store_persistently) then
+		local data = Storage.GetPlayerData(player) or {}
+
+		for k, p in pairs(perk_data) do
+			if(data[p.resource_key]) then
+				player:SetResource(p.resource_key, data[p.resource_key])
+			end
 		end
 	end
 end)

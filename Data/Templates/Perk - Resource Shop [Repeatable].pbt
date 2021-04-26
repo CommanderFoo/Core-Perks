@@ -133,9 +133,8 @@ Assets {
           Overrides {
             Name: "cs:resource_perk"
             NetReference {
-              Key: "511be48f311c4769ad1a6632ed2ad305"
               Type {
-                Value: "mc:enetreferencetype:creatorperk"
+                Value: "mc:enetreferencetype:unknown"
               }
             }
           }
@@ -188,9 +187,8 @@ Assets {
           Overrides {
             Name: "cs:resource_perk"
             NetReference {
-              Key: "582d9b4f44b24c038040548aa7e9cd56"
               Type {
-                Value: "mc:enetreferencetype:creatorperk"
+                Value: "mc:enetreferencetype:unknown"
               }
             }
           }
@@ -243,9 +241,8 @@ Assets {
           Overrides {
             Name: "cs:resource_perk"
             NetReference {
-              Key: "89ce567d1a8f423c8e58eca7442b5dd2"
               Type {
-                Value: "mc:enetreferencetype:creatorperk"
+                Value: "mc:enetreferencetype:unknown"
               }
             }
           }
@@ -298,9 +295,8 @@ Assets {
           Overrides {
             Name: "cs:resource_perk"
             NetReference {
-              Key: "1164399a008641c5b88cc82a638ce9ae"
               Type {
-                Value: "mc:enetreferencetype:creatorperk"
+                Value: "mc:enetreferencetype:unknown"
               }
             }
           }
@@ -4782,4 +4778,5 @@ Assets {
     }
   }
   SerializationVersion: 81
+  DirectlyPublished: true
 }

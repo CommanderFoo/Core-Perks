@@ -1,4 +1,8 @@
+-- My custom library
+
 local YOOTIL = require(script:GetCustomProperty("YOOTIL"))
+
+-- Properties
 
 local coins = script:GetCustomProperty("coins"):WaitForObject()
 local pickup_sound = script:GetCustomProperty("pickup_sound"):WaitForObject()

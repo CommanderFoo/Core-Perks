@@ -29,7 +29,7 @@ Assets {
           Overrides {
             Name: "cs:bronze_perk"
             NetReference {
-              Key: "65cfb2f539684bca9f7af72b3b4a6f2f"
+              Key: "f7aded94c7bb48fda8c2dc74caea1a3a"
               Type {
                 Value: "mc:enetreferencetype:creatorperk"
               }
@@ -38,7 +38,7 @@ Assets {
           Overrides {
             Name: "cs:silver_perk"
             NetReference {
-              Key: "218164e6ced2487785582663778f85c6"
+              Key: "7974db61c1f74e18b9717e9c99a62f4c"
               Type {
                 Value: "mc:enetreferencetype:creatorperk"
               }
@@ -2765,6 +2765,24 @@ Assets {
               SubObjectId: 12104784738335631324
             }
           }
+          Overrides {
+            Name: "cs:purchased_bronze"
+            ObjectReference {
+              SubObjectId: 14941210817022320973
+            }
+          }
+          Overrides {
+            Name: "cs:purchased_silver"
+            ObjectReference {
+              SubObjectId: 6932579676923477986
+            }
+          }
+          Overrides {
+            Name: "cs:purchased_gold"
+            ObjectReference {
+              SubObjectId: 17729430985184533912
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -3238,6 +3256,7 @@ Assets {
         ChildIds: 17663065542316990271
         ChildIds: 12234082779093314483
         ChildIds: 7034800239747780995
+        ChildIds: 14941210817022320973
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -3843,6 +3862,76 @@ Assets {
         }
       }
       Objects {
+        Id: 14941210817022320973
+        Name: "Purchased Text"
+        Transform {
+          Location {
+            X: -582.633301
+            Y: -21.0505981
+            Z: -6.5690155
+          }
+          Rotation {
+            Yaw: 89.9999847
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 16182916442092945271
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:forceoff"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Control {
+          Width: 200
+          Height: 60
+          RenderTransformPivot {
+            Anchor {
+              Value: "mc:euianchor:middlecenter"
+            }
+          }
+          Text {
+            Label: "PURCHASED"
+            Color {
+              R: 1
+              G: 1
+              B: 1
+              A: 1
+            }
+            Size: 31
+            Justification {
+              Value: "mc:etextjustify:center"
+            }
+            AutoWrapText: true
+            Font {
+              Id: 5533674051889560374
+            }
+            VerticalJustification {
+              Value: "mc:everticaljustification:top"
+            }
+          }
+          AnchorLayout {
+            SelfAnchor {
+              Anchor {
+                Value: "mc:euianchor:topcenter"
+              }
+            }
+            TargetAnchor {
+              Anchor {
+                Value: "mc:euianchor:bottomcenter"
+              }
+            }
+          }
+        }
+      }
+      Objects {
         Id: 1387505124700077381
         Name: "Silver"
         Transform {
@@ -3865,6 +3954,7 @@ Assets {
         ChildIds: 16327382482084320507
         ChildIds: 8703310508508514793
         ChildIds: 15996072329012743288
+        ChildIds: 6932579676923477986
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -4468,6 +4558,76 @@ Assets {
         }
       }
       Objects {
+        Id: 6932579676923477986
+        Name: "Purchased Text"
+        Transform {
+          Location {
+            X: -582.633057
+            Y: -21.0506592
+            Z: -6.5690155
+          }
+          Rotation {
+            Yaw: 89.9999771
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 1387505124700077381
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:forceoff"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Control {
+          Width: 200
+          Height: 60
+          RenderTransformPivot {
+            Anchor {
+              Value: "mc:euianchor:middlecenter"
+            }
+          }
+          Text {
+            Label: "PURCHASED"
+            Color {
+              R: 1
+              G: 1
+              B: 1
+              A: 1
+            }
+            Size: 31
+            Justification {
+              Value: "mc:etextjustify:center"
+            }
+            AutoWrapText: true
+            Font {
+              Id: 5533674051889560374
+            }
+            VerticalJustification {
+              Value: "mc:everticaljustification:top"
+            }
+          }
+          AnchorLayout {
+            SelfAnchor {
+              Anchor {
+                Value: "mc:euianchor:topcenter"
+              }
+            }
+            TargetAnchor {
+              Anchor {
+                Value: "mc:euianchor:bottomcenter"
+              }
+            }
+          }
+        }
+      }
+      Objects {
         Id: 7374096896044384645
         Name: "Gold"
         Transform {
@@ -4490,6 +4650,7 @@ Assets {
         ChildIds: 12104784738335631324
         ChildIds: 4000455742940636123
         ChildIds: 14011611172688010569
+        ChildIds: 17729430985184533912
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -5083,6 +5244,76 @@ Assets {
             TargetAnchor {
               Anchor {
                 Value: "mc:euianchor:middlecenter"
+              }
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 17729430985184533912
+        Name: "Purchased Text"
+        Transform {
+          Location {
+            X: -582.632813
+            Y: -21.0507202
+            Z: -6.5690155
+          }
+          Rotation {
+            Yaw: 89.9999542
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 7374096896044384645
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:forceoff"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Control {
+          Width: 200
+          Height: 60
+          RenderTransformPivot {
+            Anchor {
+              Value: "mc:euianchor:middlecenter"
+            }
+          }
+          Text {
+            Label: "PURCHASED"
+            Color {
+              R: 1
+              G: 1
+              B: 1
+              A: 1
+            }
+            Size: 31
+            Justification {
+              Value: "mc:etextjustify:center"
+            }
+            AutoWrapText: true
+            Font {
+              Id: 5533674051889560374
+            }
+            VerticalJustification {
+              Value: "mc:everticaljustification:top"
+            }
+          }
+          AnchorLayout {
+            SelfAnchor {
+              Anchor {
+                Value: "mc:euianchor:topcenter"
+              }
+            }
+            TargetAnchor {
+              Anchor {
+                Value: "mc:euianchor:bottomcenter"
               }
             }
           }
@@ -7028,4 +7259,5 @@ Assets {
     }
   }
   SerializationVersion: 81
+  DirectlyPublished: true
 }

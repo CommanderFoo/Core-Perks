@@ -28,17 +28,7 @@ end
 -- purchase a VIP option from the shop, we can then add the coins and setup
 -- the resource flag.
 
--- We have resource flags so you can use these on the client as well.
-
 evts[#evts + 1] = Game.playerJoinedEvent:Connect(function(player)
-	local data = Storage.GetPlayerData(player) or {}
-
-	if(data.coins) then
-		player:SetResource("coins", data.coins)
-	end
-
-	set_resource_vip(player)
-
 	players[player.id] = player.perkChangedEvent:Connect(function(player, perk)
 		if(perk == bronze_perk) then
 			player:SetResource("bronze_vip", 1)
@@ -80,6 +70,16 @@ evts[#evts + 1] = Chat.receiveMessageHook:Connect(function(speaker, params)
 	elseif(speaker:HasPerk(bronze_perk)) then
 		params.speakerName = "[Bronze VIP] " .. params.speakerName
 	end
+end)
+
+evts[#evts + 1] = Events.ConnectForPlayer("perk_vip_ready", function(player)
+	local data = Storage.GetPlayerData(player) or {}
+
+	if(data.coins) then
+		player:SetResource("coins", data.coins)
+	end
+
+	set_resource_vip(player)
 end)
 
 -- cleanup

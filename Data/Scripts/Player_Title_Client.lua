@@ -110,6 +110,8 @@ function clear_titles()
 	end
 end
 
+-- Gets the title by ID and returns back the title text string
+
 function get_title(id)
 	for i, d in ipairs(data_items:GetChildren()) do
 		if(d:GetCustomProperty("id") == tonumber(id)) then
@@ -130,6 +132,9 @@ function clear_previous_selected()
 		button.isInteractable = true
 	end
 end
+
+-- When the player joins we create a nametag for them.
+-- We also check to see if they have a player title already selected.
 
 function on_player_joined(player)	
 	if(not nametags[player.id]) then
@@ -153,6 +158,8 @@ function on_player_joined(player)
 		end
 	end
 end
+
+-- Updates the player title (i.e when purchase a new one)
 
 function update_player_title(player_id, title_id)
 	if(nametags[player_id] ~= nil) then
