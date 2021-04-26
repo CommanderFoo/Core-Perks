@@ -1,5 +1,5 @@
-site_name: Perk Examples
-site_description: Documentation for the Perk Examples on Community Content
+site_name: Perk Examples Kit
+site_description: Documentation for the Perk Examples Kit on Community Content
 docs_dir: docs
 extra_css:
   - styles/extra.css

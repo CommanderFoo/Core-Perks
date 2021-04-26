@@ -27,13 +27,18 @@ Add a new copy of the `Perk_Resource_Shop_Item_Data` script to the `Data Items` 
 
 | Property Name | Description |
 | ------------- | ----------- |
-| `resource_key` | This is the key that will be used for the resource.  So for example, if you want to sell Iron, then this should value should be whatever the Iron resource key is for your game. |
+| `resource_key` | This is the key that will be used for the resource.  So for example, if you want to sell Iron, then this value should be whatever the Iron resource key is for your game. |
 | `resource_amount` | The amount the player will get per purchase. |
 | `resource_perk` | The perk for this item. |
 | `resource_image` | The image that will be displayed in the shop for this item. |
+
+So in the example video below, I create a new shop item so that the player can purchase Apples.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/VnO-WU95SJ0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Now enter player mode and test out to see if your new shop item shows up.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/cikTCM0VPzc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+!!! tip
+	Don't forget to set the `shop_height` property.

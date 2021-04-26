@@ -3,21 +3,24 @@ title: Home
 id: home
 ---
 
-# Perk Examples Documentation
+# Perk Examples Kit Documentation
 
-Welcome to the documentation for `Perk Examples` found in [Core](https://coregames.com) Community Content.
+Welcome to the documentation for `Perk Examples Kit` found in [Core](https://coregames.com) Community Content.
 
-This community content has various examples of how you could use Perks in your game.  All examples can be drag and dropped into your hierarchy, however you will need to setup the perks for each component.  Instructions on how to do that is included for each component in the kit.
+This community content has various examples of how you _could_ use Perks in your game.  All examples can be drag and dropped into your hierarchy and contain a few options on the root object that you can adjust.
 
-Here is a list of all the type of perk examples that come with this kit.
+!!! warning
+	You will need to setup some test perks to use the components in this kit.  If you don't do this then the Perk Button will be greyed out and you will receive a warning in the Event Log.
+
+Here is a list of all the type of perk examples that come with this kit.  If you would like to see more examples, please tag me on Discord and I will see about adding more specific ones.
 
  - `Donate (Repeatable)`
 
-	*A simple in world object that players can interact with to make a donation.*
+	*An in world object that players can interact with to make a donation.*
 
  - `Speed Boost (Repeatable)`
 
-	*A in world object that players can interact with to get a boost.  Also has an option to apply to all players on the server.*
+	*An in world object that players can interact with to get a boost.  Also has an option to apply to all players on the server.*
 
  - `Resource Shop (Repeatable)`
 

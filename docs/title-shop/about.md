@@ -7,4 +7,4 @@ In the example you will see the player purchase some titles and open the title U
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Uxmyx0cOYag" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 !!! tip
-	If the Perk buttons in the example shop are greyed out / disabled, then this means the perk as not been setup for any of those items, and you will receive a warning in the event log.
+	If the Perk buttons in the example shop are greyed out / disabled, then this means the perk have not been setup for any of those items, and you will receive a warning in the event log.
