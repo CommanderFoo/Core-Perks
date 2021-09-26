@@ -2,4 +2,6 @@
 
 Documentation for Core Perks Examples Kit in Community Content.
 
-https://popthosepringles.github.io/Core-Perks
+<https://popthosepringles.github.io/Core-Perks>
+
+![Image](image.png)
